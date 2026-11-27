@@ -1,0 +1,43 @@
+name: Build daily edition
+
+on:
+  schedule:
+    # Times are UTC. 01:07 = 06:37 IST, 07:13 = 12:43 IST, 13:19 = 18:49 IST, 17:23 = 22:53 IST.
+    # GitHub may start scheduled runs a few minutes late.
+    - cron: "7 1 * * *"
+    - cron: "13 7 * * *"
+    - cron: "19 13 * * *"
+    - cron: "23 17 * * *"
+  workflow_dispatch: {}   # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: edition
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install --no-audit --no-fund
+      - name: Build edition
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GEMINI_MODEL: ${{ vars.GEMINI_MODEL }}
+        run: node scripts/build-edition.mjs
+      - name: Commit edition
+        run: |
+          git config user.name "daily-compounder-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add public/data
+          if git diff --cached --quiet; then echo "No changes"; exit 0; fi
+          git commit -m "Edition $(TZ=Asia/Kolkata date '+%Y-%m-%d %H:%M IST')"
+          git pull --rebase origin ${{ github.ref_name }}
+          git push
