@@ -1,0 +1,23 @@
+// Daily reps: guesstimates that rotate each day. Each has a suggested structure to check your approach.
+export const GUESSTIMATES = [
+  { q: "How many quick-commerce orders are placed in Delhi NCR on a typical day?", hint: "Households in NCR → share that are online shoppers → share using quick commerce → orders per user per week ÷ 7." },
+  { q: "What is the annual revenue of all Starbucks stores in India?", hint: "Number of stores → customers per store per day → average bill → days open." },
+  { q: "How many UPI transactions happen in India every day?", hint: "Smartphone users → share using UPI → transactions per active user per day (P2P + merchant)." },
+  { q: "Market size for refurbished smartphones in India (₹ per year)?", hint: "Phones sold per year → share refurbished → average price; cross-check with replacement cycles." },
+  { q: "How many EV two-wheelers will be sold in India next year?", hint: "Total two-wheeler sales → current EV share → growth rate; adjust for subsidies and model launches." },
+  { q: "How much do Indians spend on gym memberships per year?", hint: "Urban adults → share with memberships → average fee by city tier." },
+  { q: "How many cups of tea are sold by roadside stalls in Mumbai daily?", hint: "Population → daily tea drinkers → share bought outside home → cups per buyer." },
+  { q: "Annual revenue potential of a SaaS tool for Indian chartered accountants?", hint: "Practising CAs/firms → share that would pay → price per seat per year." },
+  { q: "How many weddings happen in India in a year, and what's the total spend?", hint: "Population → marriage-age cohort ÷ 2 → marriage rate; spend tiers by income segment." },
+  { q: "How many food delivery riders are on the road in Bengaluru at 8 pm?", hint: "Orders per day → share in dinner peak → orders per rider per hour." },
+  { q: "Market size for premium pet food in India?", hint: "Urban households → pet ownership → dog/cat split → share buying premium → monthly spend." },
+  { q: "How many flights take off from Delhi airport each day?", hint: "Annual passengers → passengers per flight (seats × load factor) → ÷ 365 ÷ 2 (arrivals vs departures)." },
+  { q: "Revenue of a single dark store in a metro per month?", hint: "Orders per day → average order value → days; check against store size and SKU count." },
+  { q: "How much protein powder is sold in India per year (₹)?", hint: "Gym-goers + athletes → share using supplements → monthly spend; add online vs offline split." },
+  { q: "How many co-working seats are there in Gurugram?", hint: "Office workforce → share in flexible spaces → seats per member (occupancy ratio)." },
+  { q: "Total annual spend on coaching for MBA entrance exams in India?", hint: "Test takers per year → share using paid coaching → average fee by online/offline." },
+  { q: "How many EV charging points does India need by 2030?", hint: "Projected EVs by segment → share charging in public → vehicles per charger benchmarks." },
+  { q: "Size of the Indian market for used cars (units per year)?", hint: "Cars in use → ownership tenure → resale rate; compare with new car sales ratio." },
+  { q: "How many startups get seed funding in India each year?", hint: "Active seed funds × deals per fund per year + angel-led rounds; remove overlaps." },
+  { q: "Annual revenue of a premium salon chain with 50 outlets?", hint: "Chairs per outlet → utilisation → services per chair per day → average ticket → days." },
+];

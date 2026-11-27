@@ -1,0 +1,16 @@
+{
+  "name": "daily-compounder",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A daily business, startup/VC, policy and AI-skills portal that refreshes itself.",
+  "scripts": {
+    "build:edition": "node scripts/build-edition.mjs",
+    "test:offline": "node test/run-offline.mjs",
+    "dev": "npx serve public -l 3000"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.0"
+  }
+}

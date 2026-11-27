@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>Blog</title>
+<entry><title>Claude skills: packaging a workflow as a SKILL.md</title><link href="https://example.com/e" rel="alternate"/><updated>__NOW1__</updated><summary type="html">&lt;p&gt;A walkthrough of turning a repeat task into a reusable skill folder.&lt;/p&gt;</summary></entry>
+<entry><title>The power law and why seed funds need 40 companies</title><link href="https://example.com/f"/><published>__NOW3__</published><content type="html">&lt;p&gt;Portfolio construction explained with simple math.&lt;/p&gt;</content></entry>
+</feed>

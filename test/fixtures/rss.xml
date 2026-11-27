@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>Test</title>
+<item><title><![CDATA[Fintech startup Acme raises $25 Mn in Series B led by Growth Fund]]></title><link>https://example.com/a</link><pubDate>__NOW1__</pubDate><description><![CDATA[<img src="x.jpg"/><p>Bengaluru-based Acme, which offers credit lines to small merchants, has raised $25 Mn in a Series B round led by Growth Fund, with participation from existing investors. The company will use the money to expand to 50 cities.</p>]]></description></item>
+<item><title>RBI keeps repo rate unchanged at 5.5%, retains neutral stance</title><link>https://example.com/b</link><pubDate>__NOW2__</pubDate><description>The Monetary Policy Committee voted to keep the repo rate unchanged and said inflation is expected to stay within the target band.</description></item>
+<item><title>Top 5 stocks to buy this week for big gains</title><link>https://example.com/c</link><pubDate>__NOW1__</pubDate><description>junk</description></item>
+<item><title>Tata Steel signs Rs 28,000 crore deal with APL Apollo for two units</title><link>https://example.com/d</link><pubDate>__NOW2__</pubDate><description>The deal covers two plants and will expand Tata Steel's downstream tubes business.</description></item>
+</channel></rss>
